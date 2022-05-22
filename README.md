@@ -11,7 +11,7 @@ for users. We are in a modern technological era where it very important to learn
 
 ## Usage
 
-![password](./assests/images/screenshot.png)
+![password](./Assets/images/screenshot.png)
     
     
     
