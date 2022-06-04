@@ -1,7 +1,7 @@
 // Assignment Code
 //All Variables at the top
 var generateBtn = document.querySelector("#generate");
-var lowercase = "abcdefghijklmnopqrstuvxyz";
+var lowercase = "abcdefghijklmnopqrstuvwxyz";
 var uppercase = lowercase.toUpperCase();
 var number = "0123456789";
 var special = "!@#$%^";
@@ -28,19 +28,19 @@ function generatePassword() {
     console.log(isSpecial);
     for (let i = 0; i < size; i++) {
       var randomType = Math.floor(Math.random() *4) 
-      if (isLowercase === true && randomType===0) {
+      if (randomType===0) {
         var positionString = Math.floor(Math.random() * 25);
         console.log(positionString);
         finalpwd = finalpwd + lowercase[positionString];
-      } else if (isUppercase === true && randomType===1) {
+      } else if (randomType===1) {
         var positionString = Math.floor(Math.random() * 25);
         console.log(positionString);
         finalpwd = finalpwd + uppercase[positionString];
-      } else if (isNumber === true && randomType===2) {
+      } else if (randomType===2) {
         var positionString = Math.floor(Math.random() * 9);
         console.log(positionString);
         finalpwd = finalpwd + number[positionString];
-      } else if (isSpecial === true && randomType===3) {
+      } else if (randomType===3) {
         var positionString = Math.floor(Math.random() * 6);
         console.log(positionString);
         finalpwd = finalpwd + special[positionString];
